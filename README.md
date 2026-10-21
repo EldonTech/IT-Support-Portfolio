@@ -17,6 +17,9 @@ My goal is to land an opportunity in IT Help Desk or IT Support where I can appl
 - CompTIA Security+ — Future goal
 
 ## Education
+- **Associate's degree in Information Technology** - Full Sail University (2026)
+- **Certificate in Information Technology** - DeVry University (2023)
+
 
 
 
