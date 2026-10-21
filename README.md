@@ -12,6 +12,9 @@ My goal is to land an opportunity in IT Help Desk or IT Support where I can appl
 
 ## Certifications 
 - [CompTIA ITF+ — View Certificate](./certifications/CompTIA-ITF-Plus.pdf)
+- [CompTIA A+ — View Certificate](./certifications/CompTIA-A-Plus.pdf)
+- CompTIA Network+ - Currently studying
+- CompTIA Security+ - Future goal
 
 ## Education
 
