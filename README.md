@@ -10,7 +10,9 @@ Outside of studying, I'm building home labs to gain hands-on experience with Win
 
 My goal is to land an opportunity in IT Help Desk or IT Support where I can apply what I've learned, help others solve technical problems, and continue growing my skills through real-world experience. I'm excited to keep learning, earn future certifications, and build a career in an industry I'm passionate about.
 
-## Certifications & Education
+## Certifications 
+
+## Education
 
 
 
