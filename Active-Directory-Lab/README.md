@@ -47,7 +47,7 @@ This project documents how I built an Active Directory home lab using Oracle Vir
 
 **Result:** A virtual machine was created for the Windows Server installation.
 
-**Screenshot:** Add a screenshot of the VirtualBox configuration here.
+<img width="841" height="702" alt="Screenshot 2026-10-22 082107" src="https://github.com/user-attachments/assets/83c014be-ee0d-4457-964e-3ac7a09b4819" />
 
 <!-- Screenshot: VirtualBox virtual machine configuration -->
 
