@@ -67,7 +67,7 @@ This project documents how I built an Active Directory home lab using Oracle Vir
 
 **Result:** Windows Server 2025 was installed and the server desktop was accessible.
 
-**Screenshot:** Add a screenshot of the Windows Server desktop here.
+<img width="1021" height="855" alt="Screenshot 2026-10-22 090746" src="https://github.com/user-attachments/assets/f031d9a8-d523-4bf8-9059-b1f1947dcdf4" />
 
 <!-- Screenshot: Windows Server desktop -->
 
