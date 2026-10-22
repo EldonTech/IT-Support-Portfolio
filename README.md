@@ -20,6 +20,18 @@ My goal is to land an opportunity in IT Help Desk or IT Support where I can appl
 - **Associate's degree in Information Technology** - Full Sail University (2026)
 - **Certificate in Information Technology** - DeVry University (2023)
 
+## IT Support Home Labs
 
+Hands-on labs I'm building to develop practical IT Support and troubleshooting skills.
+
+### Completed Labs
+
+- [Active Directory Home Lab](./Active-Directory-Lab/README.md) — Installed Windows Server 2025, configured Active Directory, created a user account, and practiced resetting a password.
+
+### Planned Labs
+
+- Windows Administration Lab — Practice Windows configuration, user management, and troubleshooting.
+- Help Desk Troubleshooting Lab — Work through common IT support scenarios and document solutions.
+- Networking Lab — Practice IP addressing, DNS, DHCP, and network troubleshooting.
 
 
