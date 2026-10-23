@@ -70,7 +70,10 @@ The virtual machine was configured with 4 GB of RAM, 2 processors, and an 80 GB 
 
 **Result:** Windows Server 2025 was installed and the server desktop was accessible.
 
-<img width="1021" height="855" alt="Screenshot 2026-10-22 090746" src="https://github.com/user-attachments/assets/f031d9a8-d523-4bf8-9059-b1f1947dcdf4" />
+**Screenshot 2: Confirm Windows Server Installation**
+
+The Windows Server 2025 Standard Evaluation (Desktop Experience) edition was selected. The installation was configured to keep nothing on the virtual disk.
+<img width="1014" height="847" alt="Screenshot 2026-10-22 084414" src="https://github.com/user-attachments/assets/4b1e62c1-b911-414a-9e69-be9d1a38948d" />
 
 <!-- Screenshot: Windows Server desktop -->
 
