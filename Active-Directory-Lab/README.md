@@ -80,6 +80,11 @@ The Windows Server 2025 Standard Evaluation (Desktop Experience) edition was sel
 The 80 GB unallocated virtual disk was selected as the installation destination for Windows Server 2025.
 <img width="1015" height="847" alt="Screenshot 2026-10-22 084300" src="https://github.com/user-attachments/assets/15466d1a-0995-4e76-bcc1-6b601c6eece5" />
 
+**Screenshot 4: Configure the Administrator Account**
+
+A password was created for the built-in Administrator account to secure access to the Windows Server.
+<img width="1019" height="857" alt="Screenshot 2026-10-22 090524" src="https://github.com/user-attachments/assets/418767e7-b75f-4a48-9408-69f4c3693708" />
+
 <!-- Screenshot: Windows Server desktop -->
 
 ## Step 3: Install Active Directory Domain Services
