@@ -107,7 +107,10 @@ The Windows Server installation completed successfully, and the Administrator si
 
 **Result:** The Active Directory Domain Services role was installed.
 
-**Screenshot:** Add a screenshot showing the installed role or Server Manager dashboard.
+**Screenshot 6: Windows Server Manager Dashboard**
+
+After signing in as Administrator, Server Manager was opened to review the server dashboard and installed server roles.
+<img width="1021" height="852" alt="Screenshot 2026-10-22 204214" src="https://github.com/user-attachments/assets/884111db-8daf-44db-a1a7-db37b1e75d54" />
 
 <!-- Screenshot: Active Directory Domain Services installed -->
 
