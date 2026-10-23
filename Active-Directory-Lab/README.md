@@ -135,7 +135,10 @@ After signing in as Administrator, Server Manager was opened to review the serve
 
 **Result:** The server was promoted to a domain controller for the `ad.lab` domain.
 
-**Screenshot:** Add a screenshot of the domain controller configuration or successful promotion.
+**Screenshot 7: Review Domain Controller Configuration**
+
+The domain `ad.lab` was configured as a new forest, with DNS enabled, before promoting the server to a domain controller.
+<img width="1024" height="856" alt="Screenshot 2026-10-22 093636" src="https://github.com/user-attachments/assets/59656768-9295-4aa2-b974-d9ec0c5ccd45" />
 
 <!-- Screenshot: Domain controller setup -->
 
