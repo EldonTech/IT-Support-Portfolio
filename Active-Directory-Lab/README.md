@@ -133,8 +133,6 @@ After signing in as Administrator, Server Manager was opened to review the serve
 10. Click **Install** after the prerequisite checks pass.
 11. Allow the server to restart.
 
-**Result:** The server was promoted to a domain controller for the `ad.lab` domain.
-
 **Screenshot 7: Review Domain Controller Configuration**
 
 The domain `ad.lab` was configured as a new forest, with DNS enabled, before promoting the server to a domain controller.
@@ -145,6 +143,12 @@ The domain `ad.lab` was configured as a new forest, with DNS enabled, before pro
 The prerequisite checks passed successfully, allowing the server promotion process to continue. The wizard displayed network and DNS delegation warnings for review.
 <img width="1021" height="854" alt="Screenshot 2026-10-22 093748" src="https://github.com/user-attachments/assets/361638c6-3310-4175-9651-dec56a1b16f2" />
 
+**Screenshot 9: Domain Administrator Sign-In**
+
+After the server restarted, the domain Administrator sign-in screen displayed `AD\Administrator`.
+<img width="1025" height="853" alt="Screenshot 2026-10-22 094447" src="https://github.com/user-attachments/assets/9407859b-50f8-43f2-b7e2-4e7fa528b424" />
+
+**Result:** The server was promoted to a domain controller for the `ad.lab` domain.
 <!-- Screenshot: Domain controller setup -->
 
 ## Step 5: Open Active Directory Users and Computers
