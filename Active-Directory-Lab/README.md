@@ -136,6 +136,8 @@ After signing in as Administrator, Server Manager opened successfully. The dashb
 
 **Goal:** Add the Windows Server role needed to manage a domain.
 
+### Procedure
+
 1. Open **Server Manager**.
 2. Select **Manage** > **Add Roles and Features**, or click **Add roles and features** on the dashboard.
 3. Choose **Role-based or feature-based installation**.
@@ -147,13 +149,53 @@ After signing in as Administrator, Server Manager opened successfully. The dashb
 
 **Result:** The Active Directory Domain Services role was installed.
 
-**Screenshot:** Add a screenshot showing the installed role or Server Manager dashboard.
+**Screenshot 12: Select Installation Type**
 
-<!-- Screenshot: Active Directory Domain Services installed -->
+The Role-based or feature-based installation option was selected in Server Manager to install Active Directory Domain Services (AD DS) on the Windows Server 2025 virtual machine.
+<img width="1022" height="831" alt="12-installation-type" src="https://github.com/user-attachments/assets/14d3a49a-8638-4515-8b4c-aac32761813b" />
+
+**Screenshot 13: Select Destination Server**
+
+The local Windows Server 2025 machine was selected as the destination server for installing the Active Directory Domain Services role.
+<img width="1023" height="829" alt="13-server-selection" src="https://github.com/user-attachments/assets/1be29395-be35-468d-b2a6-d2854d2fb991" />
+
+**Screenshot 14: Select Active Directory Domain Services**
+
+The Active Directory Domain Services (AD DS) role was selected in the Add Roles and Features Wizard. The required management tools were included.
+<img width="1021" height="832" alt="14-server-roles" src="https://github.com/user-attachments/assets/4d573edf-3d3b-4ea8-8ced-1e00561f902b" />
+
+**Screenshot 15: Add Required Features**
+
+The required management tools and features for Active Directory Domain Services were confirmed before continuing with the installation.
+<img width="1022" height="832" alt="15-add-required-features" src="https://github.com/user-attachments/assets/d5a5fe61-a621-45fd-a55b-c3efe49f8d24" />
+
+**Screenshot 16: Select Features**
+
+The Select Features page was reviewed, and the required default selections were retained.
+<img width="1020" height="833" alt="16-select-features" src="https://github.com/user-attachments/assets/5159fb62-750d-426f-bb6a-120f69749e71" />
+
+**Screenshot 17: Active Directory Domain Services Information**
+
+The AD DS information page was reviewed to understand the role and its relationship to domain controllers and DNS.
+<img width="1021" height="830" alt="17-adds-information" src="https://github.com/user-attachments/assets/6d726378-7075-434f-a7cb-c6a1e6dd4a82" />
+
+**Screenshot 18: Confirm Installation Selections**
+
+The installation selections were reviewed, including Active Directory Domain Services and its required management tools, before installation.
+<img width="1023" height="830" alt="18-confirm-adds-installation" src="https://github.com/user-attachments/assets/01391eb7-7ba6-4d3b-9c56-afd4665a3e8a" />
+
+**Screenshot 19: Active Directory Domain Services Installation Progress**
+
+Active Directory Domain Services and its management tools were installed successfully. The wizard displayed the option to promote the server to a domain controller.
+<img width="1024" height="833" alt="19-adds-installation-results" src="https://github.com/user-attachments/assets/76cacb00-5833-4801-9ab2-1cf1ea9f6544" />
+
+
 
 ## Step 4: Promote the Server to a Domain Controller
 
 **Goal:** Create a new Active Directory domain.
+
+### Procedure
 
 1. In Server Manager, click the notification flag.
 2. Select **Promote this server to a domain controller**.
@@ -171,15 +213,80 @@ After signing in as Administrator, Server Manager opened successfully. The dashb
 10. Click **Install** after the prerequisite checks pass.
 11. Allow the server to restart.
 
-**Result:** The server was promoted to a domain controller for the `ad.lab` domain.
+**Result:** The Windows Server 2025 virtual machine was successfully promoted to a domain controller for `ad.lab`. Active Directory Users and Computers confirmed the domain controller, and DNS Manager showed the `ad.lab` and `_msdcs.ad.lab` zones running.
 
-**Screenshot:** Add a screenshot of the domain controller configuration or successful promotion.
+**Screenshot 20: New Forest Configuration**
 
-<!-- Screenshot: Domain controller setup -->
+A new Active Directory forest was configured using `ad.lab` as the root domain name.
+<img width="1024" height="831" alt="20-new-forest-configuration" src="https://github.com/user-attachments/assets/022786c5-59d6-4381-a769-c5e7640a7416" />
+
+**Screenshot 21: Domain Controller Options**
+
+Windows Server 2025 functional levels were selected, with DNS Server and Global Catalog enabled. A Directory Services Restore Mode (DSRM) password was configured.
+<img width="1025" height="833" alt="21-domain-controller-options" src="https://github.com/user-attachments/assets/f8ab2e6d-6fa3-497b-b5de-b9db30980596" />
+
+**Screenshot 22: DNS Options**
+
+The DNS delegation warning was reviewed during domain controller configuration. No DNS delegation was created because this is a standalone home lab environment.
+<img width="1021" height="831" alt="22-dns-delegation" src="https://github.com/user-attachments/assets/c9964411-c5f0-463e-801b-6be261cb2236" />
+
+**Screenshot 23: Additional Options**
+
+The NetBIOS domain name was confirmed as `AD` for the new `ad.lab` domain.
+<img width="1021" height="827" alt="23-netbios-domain-name" src="https://github.com/user-attachments/assets/527d4253-583a-42a8-99bc-53736ade6beb" />
+
+**Screenshot 24: Paths**
+
+The default paths for the Active Directory database, log files, and SYSVOL were retained.
+<img width="1024" height="829" alt="24-paths" src="https://github.com/user-attachments/assets/0dad6e55-f678-4459-a1a4-54a963043f6b" />
+
+**Screenshot 25: Review Options**
+
+The domain controller configuration was reviewed, including the `ad.lab` domain, `AD` NetBIOS name, DNS, Global Catalog, and Windows Server 2025 functional levels.
+<img width="1022" height="832" alt="25-review-options" src="https://github.com/user-attachments/assets/9b3daab2-2b2d-4bd0-b3fb-940b2f763c90" />
+
+**Screenshot 26: Prerequisites Check**
+
+The prerequisite checks completed successfully, allowing the server to be promoted to a domain controller. The displayed warnings were reviewed before proceeding.
+<img width="1022" height="830" alt="26-prerequisites-check" src="https://github.com/user-attachments/assets/b3861b88-037f-4da1-a61c-beedae49c7e5" />
+
+**Screenshot 27: Domain Administrator Sign-In**
+
+After the server restarted following promotion, the sign-in screen displayed `AD\Administrator`, showing that the domain administrator account was available for sign-in.
+<img width="1019" height="825" alt="27-admin-sign-in" src="https://github.com/user-attachments/assets/a3ea95c8-b504-40f4-9eea-6fc2ac4378c0" />
+
+**Screenshot 28: Server Manager After Domain Controller Promotion**
+
+Server Manager displayed the Active Directory Domain Services and DNS roles after the server was promoted to a domain controller.
+<img width="1025" height="830" alt="28-server-manager-after-promotion" src="https://github.com/user-attachments/assets/59967fd9-9229-4eae-9a1d-1175befb3f7d" />
+
+**Screenshot 29: Active Directory Users and Computers**
+
+Active Directory Users and Computers was opened, and the newly created `ad.lab` domain was visible in the console.
+<img width="1023" height="829" alt="29-Active-directory-users-and-computers" src="https://github.com/user-attachments/assets/4479dd58-3255-457d-b8f0-ca3268a8b64c" />
+
+**Screenshot 30: Domain Controllers Container**
+
+The Domain Controllers container displayed the server as a domain controller, with the Global Catalog (GC) designation visible.
+<img width="1025" height="832" alt="30-domain-controllers" src="https://github.com/user-attachments/assets/58a1f229-ea9a-48ed-89c1-cc0203bfa1d0" />
+
+**Screenshot 31: DNS Manager Overview**
+
+DNS Manager displayed the server and its DNS management sections, including Forward Lookup Zones and Reverse Lookup Zones.
+<img width="1025" height="829" alt="31-dns-manager" src="https://github.com/user-attachments/assets/5e8a7964-2792-40ca-86b6-951550e63f6a" />
+
+**Screenshot 32: Active Directory DNS Zones**
+
+The Forward Lookup Zones section displayed the `ad.lab` and `_msdcs.ad.lab` zones, both with a Running status.
+<img width="1023" height="831" alt="32-active-directory-dns-zones" src="https://github.com/user-attachments/assets/7b9f3272-3941-4c46-9f1c-f69b1716eb10" />
+
+
 
 ## Step 5: Open Active Directory Users and Computers
 
 **Goal:** Access the tool used to manage domain accounts.
+
+### Procedure
 
 1. Sign in using the domain Administrator account.
 2. Open **Server Manager**.
