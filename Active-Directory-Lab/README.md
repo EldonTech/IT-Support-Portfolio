@@ -48,7 +48,6 @@ This project documents how I built an Active Directory home lab using Oracle Vir
 **Result:** A virtual machine was created for the Windows Server installation.
 
 **Screenshot 1: VirtualBox virtual machine configuration**
-
 The virtual machine was configured with 4 GB of RAM, 2 processors, and an 80 GB virtual hard disk to run Windows Server 2025.
 <img width="841" height="702" alt="Screenshot 2026-10-22 082107" src="https://github.com/user-attachments/assets/83c014be-ee0d-4457-964e-3ac7a09b4819" />
 
