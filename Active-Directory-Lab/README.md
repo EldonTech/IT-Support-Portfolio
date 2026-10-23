@@ -140,6 +140,11 @@ After signing in as Administrator, Server Manager was opened to review the serve
 The domain `ad.lab` was configured as a new forest, with DNS enabled, before promoting the server to a domain controller.
 <img width="1024" height="856" alt="Screenshot 2026-10-22 093636" src="https://github.com/user-attachments/assets/59656768-9295-4aa2-b974-d9ec0c5ccd45" />
 
+**Screenshot 8: Domain Controller Prerequisite Check**
+
+The prerequisite checks passed successfully, allowing the server promotion process to continue. The wizard displayed network and DNS delegation warnings for review.
+<img width="1021" height="854" alt="Screenshot 2026-10-22 093748" src="https://github.com/user-attachments/assets/361638c6-3310-4175-9651-dec56a1b16f2" />
+
 <!-- Screenshot: Domain controller setup -->
 
 ## Step 5: Open Active Directory Users and Computers
