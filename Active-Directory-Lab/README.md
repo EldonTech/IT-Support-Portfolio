@@ -4,6 +4,23 @@
 
 This project documents how I built an Active Directory home lab using Oracle VirtualBox and Windows Server 2025. The goal was to gain hands-on experience with Windows Server administration and common IT Help Desk tasks.
 
+## Table of Contents
+
+- [Lab Environment](#lab-environment)
+- [Lab Objectives](#lab-objectives)
+- [Step-by-Step Setup Guide](#step-by-step-setup-guide)
+  - [Step 1: Create the Virtual Machine](#step-1-create-the-virtual-machine)
+  - [Step 2: Install Windows Server 2025](#step-2-install-windows-server-2025)
+  - [Step 3: Install Active Directory Domain Services](#step-3-install-active-directory-domain-services)
+  - [Step 4: Promote the Server to a Domain Controller](#step-4-promote-the-server-to-a-domain-controller)
+  - [Step 5: Open Active Directory Users and Computers](#step-5-open-active-directory-users-and-computers)
+  - [Step 6: Create an Organizational Unit](#step-6-create-an-organizational-unit)
+  - [Step 7: Create a Test User Account](#step-7-create-a-test-user-account)
+  - [Step 8: Reset a User Password](#step-8-reset-a-user-password)
+- [Skills Practiced](#skills-practiced)
+- [Future Improvements](#future-improvements)
+- [Conclusion](#conclusion)
+
 ## Lab Environment
 
 | Component | Configuration |
@@ -118,7 +135,7 @@ Windows Server 2025 Standard Evaluation (Desktop Experience) was selected, and t
 **Screenshot 9: Configure the Administrator Account**
 
 A password was configured for the built-in Administrator account to secure access to the Windows Server 2025 virtual machine.
-<img width="1021" height="806" alt="09-administrato-password-setup" src="https://github.com/user-attachments/assets/3ddb1bd3-d714-4abd-92d8-b116ca147499" />
+<img width="1021" height="806" alt="09-administrator-password-setup" src="https://github.com/user-attachments/assets/2502337b-b5ba-4894-8687-4116409fa2d0" />
 
 **Screenshot 10: Windows Server Administrator Sign-In**
 
@@ -263,7 +280,7 @@ Server Manager displayed the Active Directory Domain Services and DNS roles afte
 **Screenshot 29: Active Directory Users and Computers**
 
 Active Directory Users and Computers was opened, and the newly created `ad.lab` domain was visible in the console.
-<img width="1023" height="829" alt="29-Active-directory-users-and-computers" src="https://github.com/user-attachments/assets/4479dd58-3255-457d-b8f0-ca3268a8b64c" />
+<img width="1023" height="829" alt="29-active-directory-users-and-computers" src="https://github.com/user-attachments/assets/3ca08d47-fd53-4b9d-9d46-d76fbdd2bcdc" />
 
 **Screenshot 30: Domain Controllers Container**
 
@@ -295,13 +312,18 @@ The Forward Lookup Zones section displayed the `ad.lab` and `_msdcs.ad.lab` zone
 
 **Result:** Active Directory Users and Computers opened and displayed the domain.
 
-**Screenshot:** Add a screenshot showing the `ad.lab` domain.
+**Screenshot 33: Active Directory Users and Computers**
 
-<!-- Screenshot: Active Directory Users and Computers -->
+Active Directory Users and Computers was opened from Server Manager, and the `ad.lab` domain was displayed in the left pane.
+<img width="1023" height="829" alt="33-active-directory-users-and-computers" src="https://github.com/user-attachments/assets/e6f80c3a-6763-4850-817d-804c7d8bc5a0" />
+
+
 
 ## Step 6: Create an Organizational Unit
 
 **Goal:** Organize test user accounts in a dedicated OU.
+
+### Procedure
 
 1. In Active Directory Users and Computers, right-click `ad.lab`.
 2. Select **New** > **Organizational Unit**.
@@ -310,48 +332,76 @@ The Forward Lookup Zones section displayed the `ad.lab` and `_msdcs.ad.lab` zone
 5. Click **OK**.
 6. Select the new OU.
 
-**Result:** The `Help Desk Users` OU was created.
+**Result:** The `Help Desk Users` OU was created under the `ad.lab` domain.
 
-**Screenshot:** Add a screenshot showing the OU.
+**Screenshot 34: Help Desk Users Organizational Unit**
 
-<!-- Screenshot: Help Desk Users OU -->
+The `Help Desk Users` organizational unit was created under the `ad.lab` domain in Active Directory Users and Computers to organize test user accounts.
+<img width="1023" height="831" alt="34-help-desk-users-ou" src="https://github.com/user-attachments/assets/09d7ce99-49b3-4f5c-a969-2afd3ddd8513" />
+
+
 
 ## Step 7: Create a Test User Account
 
-**Goal:** Practice creating an employee account.
+**Goal:** Practice creating an employee account in Active Directory.
 
-1. Right-click the `Help Desk Users` OU.
+### Procedure
+
+1. In Active Directory Users and Computers, right-click the `Help Desk Users` OU.
 2. Select **New** > **User**.
-3. Enter the first name `Jamie` and last name `Smith`.
+3. Enter `Jamie` as the first name and `Smith` as the last name.
 4. Enter `jsmith` as the user logon name.
 5. Click **Next**.
 6. Set and confirm a strong practice password.
 7. Select **User must change password at next logon**.
 8. Ensure **Account is disabled** is unchecked.
-9. Complete the wizard.
+9. Review the account details and click **Finish**.
 
-**Result:** A test account for Jamie Smith was created in the `Help Desk Users` OU.
+**Result:** The test account for Jamie Smith (`jsmith`) was created successfully in the `Help Desk Users` OU.
 
-**Screenshot:** Add a screenshot showing the test account in the OU.
+**Screenshot 35: Test User Account Details**
 
-<!-- Screenshot: Jamie Smith user account -->
+Jamie Smith’s test user account was configured with the username `jsmith` in the `Help Desk Users` organizational unit.
+<img width="1023" height="831" alt="35-test-user-details" src="https://github.com/user-attachments/assets/c50487bb-8eb0-4898-b6b0-dcd58c2393ff" />
+
+**Screenshot 36: User Creation Confirmation**
+
+The confirmation page displayed the new Jamie Smith account with the logon name `jsmith@ad.lab` and the `Help Desk Users` organizational unit as its destination.
+<img width="1028" height="831" alt="36-test-user-created" src="https://github.com/user-attachments/assets/ec268885-0cd8-4647-be07-711b59ec5e63" />
+
+**Screenshot 37: Test User Created in Active Directory**
+
+The `jsmith` test user account was successfully created and displayed inside the `Help Desk Users` organizational unit in the `ad.lab` domain.
+<img width="1024" height="831" alt="37-test-user-listed" src="https://github.com/user-attachments/assets/a2bf2e8a-f991-4dbe-b4fc-f8eee7dc0e2c" />
+
+
 
 ## Step 8: Reset a User Password
 
-**Goal:** Practice a common Help Desk request.
+**Goal:** Practice handling a common Help Desk request.
 
-1. In Active Directory Users and Computers, locate Jamie Smith.
+### Procedure
+
+1. In Active Directory Users and Computers, locate Jamie Smith in the `Help Desk Users` OU.
 2. Right-click the account.
 3. Select **Reset Password**.
 4. Enter and confirm a new practice password.
-5. Select **User must change password at next logon**.
+5. Leave **User must change password at next logon** selected.
 6. Click **OK** to complete the reset.
 
-**Result:** The test user's password was reset successfully.
+**Result:** Jamie Smith’s password was reset successfully. Active Directory Domain Services displayed a confirmation message.
 
-**Screenshot:** Add a screenshot of the password reset confirmation if available. Never include the password itself.
+**Screenshot 38: Reset User Password**
 
-<!-- Screenshot: Password reset confirmation -->
+The Reset Password window was opened for the `jsmith` test account. The option requiring the user to change their password at the next logon was selected.
+<img width="1020" height="829" alt="38-reset-password-window" src="https://github.com/user-attachments/assets/ffae4858-7ba4-45f1-96b9-52dbb00fa0b3" />
+
+**Screenshot 39: Password Reset Confirmation**
+
+Active Directory Domain Services confirmed that Jamie Smith’s password had been changed successfully.
+<img width="1020" height="829" alt="39-password-reset-confirmation" src="https://github.com/user-attachments/assets/08e7a42a-bf49-490d-be4b-f56adafbe382" />
+
+
 
 ---
 
