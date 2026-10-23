@@ -85,6 +85,11 @@ The 80 GB unallocated virtual disk was selected as the installation destination 
 A password was created for the built-in Administrator account to secure access to the Windows Server.
 <img width="1019" height="857" alt="Screenshot 2026-10-22 090524" src="https://github.com/user-attachments/assets/418767e7-b75f-4a48-9408-69f4c3693708" />
 
+**Screenshot 5: Windows Server Administrator Sign-In**
+
+The Windows Server installation completed successfully, and the Administrator sign-in screen was displayed.
+<img width="1021" height="855" alt="Screenshot 2026-10-22 090746" src="https://github.com/user-attachments/assets/fe343c2a-f112-4a0e-a91a-668ab6e16dd5" />
+
 <!-- Screenshot: Windows Server desktop -->
 
 ## Step 3: Install Active Directory Domain Services
