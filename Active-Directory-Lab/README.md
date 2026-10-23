@@ -60,11 +60,13 @@ This project documents how I built an Active Directory home lab using Oracle Vir
 The screenshot shows the virtual machine name, operating system, memory, processor allocation, and virtual disk size.
 <img width="842" height="628" alt="01-vm-configuration" src="https://github.com/user-attachments/assets/aebbcb9d-ce10-4bc6-951c-dd9a375758c0" />
 
-<!-- Screenshot: VirtualBox virtual machine configuration -->
+
 
 ## Step 2: Install Windows Server 2025
 
 **Goal:** Install the server operating system.
+
+### Procedure
 
 1. Start the `AD-Lab-Server2025` virtual machine.
 2. Select English (United States) and the US keyboard layout.
@@ -75,6 +77,8 @@ The screenshot shows the virtual machine name, operating system, memory, process
 7. Click **Install** and wait for setup to finish.
 8. Create and securely store the Administrator password.
 9. Sign in to Windows Server.
+
+**Result:** Windows Server 2025 was installed and the server desktop was accessible.
 
 **Screenshot 2: Windows Server Language Settings**
 
@@ -111,9 +115,22 @@ The 50 GB unallocated virtual disk was selected as the destination for the Windo
 Windows Server 2025 Standard Evaluation (Desktop Experience) was selected, and the setup was ready to begin installing the operating system on the virtual machine.
 <img width="1019" height="758" alt="08-ready-to-install" src="https://github.com/user-attachments/assets/934ff21d-69f9-4e73-a337-fb7b60f3189c" />
 
+**Screenshot 9: Configure the Administrator Account**
 
-**Result:** Windows Server 2025 was installed and the server desktop was accessible.
-<!-- Screenshot: Windows Server desktop -->
+A password was configured for the built-in Administrator account to secure access to the Windows Server 2025 virtual machine.
+<img width="1021" height="806" alt="09-administrato-password-setup" src="https://github.com/user-attachments/assets/3ddb1bd3-d714-4abd-92d8-b116ca147499" />
+
+**Screenshot 10: Windows Server Administrator Sign-In**
+
+Windows Server 2025 installation completed successfully, and the built-in Administrator sign-in screen was displayed.
+<img width="1023" height="819" alt="10-administrator-sign-in" src="https://github.com/user-attachments/assets/cbbb1bda-e9ec-408c-8ba3-3e8a7cc8221e" />
+
+**Screenshot 11: Windows Server Manager Dashboard**
+
+After signing in as Administrator, Server Manager opened successfully. The dashboard provides access to server configuration and management tools.
+<img width="1023" height="830" alt="11-server-manager-dashboard" src="https://github.com/user-attachments/assets/f842e52d-c8a5-4c71-9c9a-bbb7290bbcdf" />
+
+
 
 ## Step 3: Install Active Directory Domain Services
 
