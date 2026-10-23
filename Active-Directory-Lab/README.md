@@ -105,13 +105,12 @@ The Windows Server installation completed successfully, and the Administrator si
 7. Continue through the wizard, leaving the other default feature selections unchanged.
 8. Click **Install**.
 
-**Result:** The Active Directory Domain Services role was installed successfully.
-
 **Screenshot 6: Windows Server Manager Dashboard**
 
 After signing in as Administrator, Server Manager was opened to review the server dashboard and installed server roles.
 <img width="1021" height="852" alt="Screenshot 2026-10-22 204214" src="https://github.com/user-attachments/assets/884111db-8daf-44db-a1a7-db37b1e75d54" />
 
+**Result:** The Active Directory Domain Services role was installed successfully.
 <!-- Screenshot: Active Directory Domain Services installed -->
 
 ## Step 4: Promote the Server to a Domain Controller
