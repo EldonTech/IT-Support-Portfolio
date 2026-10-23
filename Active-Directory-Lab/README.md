@@ -72,7 +72,7 @@ The virtual machine was configured with 4 GB of RAM, 2 processors, and an 80 GB 
 
 **Screenshot 2: Confirm Windows Server Installation**
 
-The Windows Server 2025 Standard Evaluation (Desktop Experience) edition was selected. The installation was configured to keep nothing on the virtual disk.
+The Windows Server 2025 Standard Evaluation (Desktop Experience) edition was selected. 
 <img width="1014" height="847" alt="Screenshot 2026-10-22 084414" src="https://github.com/user-attachments/assets/4b1e62c1-b911-414a-9e69-be9d1a38948d" />
 
 <!-- Screenshot: Windows Server desktop -->
