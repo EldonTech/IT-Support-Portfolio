@@ -75,6 +75,11 @@ The virtual machine was configured with 4 GB of RAM, 2 processors, and an 80 GB 
 The Windows Server 2025 Standard Evaluation (Desktop Experience) edition was selected. 
 <img width="1014" height="847" alt="Screenshot 2026-10-22 084414" src="https://github.com/user-attachments/assets/4b1e62c1-b911-414a-9e69-be9d1a38948d" />
 
+**Screenshot 3: Select Installation Disk**
+
+The 80 GB unallocated virtual disk was selected as the installation destination for Windows Server 2025.
+<img width="1015" height="847" alt="Screenshot 2026-10-22 084300" src="https://github.com/user-attachments/assets/15466d1a-0995-4e76-bcc1-6b601c6eece5" />
+
 <!-- Screenshot: Windows Server desktop -->
 
 ## Step 3: Install Active Directory Domain Services
